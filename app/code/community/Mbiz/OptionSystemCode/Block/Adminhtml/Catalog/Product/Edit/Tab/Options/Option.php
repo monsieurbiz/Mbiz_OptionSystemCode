@@ -24,7 +24,7 @@ class Mbiz_OptionSystemCode_Block_Adminhtml_Catalog_Product_Edit_Tab_Options_Opt
         parent::__construct();
 
         // Change the template :')
-        $this->setTemplate('catalog/product/edit/options/option-with-system-code.phtml');
+        $this->setTemplate('mbiz_optionsystemcode/catalog/product/edit/options/option-with-system-code.phtml');
     }
 
     /**
