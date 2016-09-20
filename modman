@@ -1,0 +1,3 @@
+app/code/community/Mbiz/OptionSystemCode app/code/community/Mbiz/OptionSystemCode
+app/design/adminhtml/base/default/template/mbiz_optionsystemcode/catalog/product/edit/options/option-with-system-code.phtml app/design/adminhtml/base/default/template/mbiz_optionsystemcode/catalog/product/edit/options/option-with-system-code.phtml
+app/etc/modules/Mbiz_OptionSystemCode.xml app/etc/modules/Mbiz_OptionSystemCode.xml

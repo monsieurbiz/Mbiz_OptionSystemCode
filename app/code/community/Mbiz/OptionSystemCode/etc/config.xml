@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * This file is part of Mbiz_OptionSystemCode for Magento.
+ *
+ * @license proprietary
+ * @author Jacques Bodin-Hullin <j.bodinhullin@monsieurbiz.com> <@jacquesbh>
+ * @category Mbiz
+ * @package Mbiz_OptionSystemCode
+ * @copyright Copyright (c) 2016 Monsieur Biz (https://monsieurbiz.com/)
+ */
+-->
+<config>
+    <modules>
+        <Mbiz_OptionSystemCode>
+            <version>0.1.0</version>
+        </Mbiz_OptionSystemCode>
+    </modules>
+    <global>
+        <blocks>
+            <mbiz_optionsystemcode>
+                <class>Mbiz_OptionSystemCode_Block</class>
+            </mbiz_optionsystemcode>
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_edit_tab_options_option>Mbiz_OptionSystemCode_Block_Adminhtml_Catalog_Product_Edit_Tab_Options_Option</catalog_product_edit_tab_options_option>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <resources>
+            <mbiz_optionsystemcode_setup>
+                <setup>
+                    <module>Mbiz_OptionSystemCode</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mbiz_optionsystemcode_setup>
+        </resources>
+    </global>
+</config>
