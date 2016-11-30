@@ -14,6 +14,9 @@
     <modules>
         <Mbiz_OptionSystemCode>
             <version>0.1.0</version>
+            <depends>
+                <Mage_Catalog />
+            </depends>
         </Mbiz_OptionSystemCode>
     </modules>
     <global>
@@ -38,5 +41,38 @@
                 </connection>
             </mbiz_optionsystemcode_setup>
         </resources>
+        <helpers>
+            <mbiz_optionsystemcode>
+                <class>Mbiz_OptionSystemCode_Helper</class>
+            </mbiz_optionsystemcode>
+            <catalog>
+                <rewrite>
+                    <product_configuration>Mbiz_OptionSystemCode_Helper_Product_Configuration</product_configuration>
+                </rewrite>
+            </catalog>
+        </helpers>
+        <catalog>
+            <product>
+                <type>
+                    <simple>
+                        <model>mbiz_optionsystemcode/catalog_product_type_simple</model>
+                    </simple>
+                    <grouped>
+                        <model>mbiz_optionsystemcode/catalog_product_type_grouped</model>
+                    </grouped>
+                    <configurable>
+                        <model>mbiz_optionsystemcode/catalog_product_type_configurable</model>
+                    </configurable>
+                    <virtual>
+                        <model>mbiz_optionsystemcode/catalog_product_type_virtual</model>
+                    </virtual>
+                </type>
+            </product>
+        </catalog>
+        <models>
+            <mbiz_optionsystemcode>
+                <class>Mbiz_OptionSystemCode_Model</class>
+            </mbiz_optionsystemcode>
+        </models>
     </global>
 </config>
